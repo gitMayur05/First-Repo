@@ -46,6 +46,9 @@ public class Ticket extends BaseEntity
 	@Column(length = 15, nullable = false)
 	private SeatClass seatClass;
 	
+	@Column(name = "ticket_price")
+	private double ticketPrice;
+	
 	@ManyToOne()
 	@JoinColumn(name = "flight_id", nullable = false)
 	private Flight flight;
